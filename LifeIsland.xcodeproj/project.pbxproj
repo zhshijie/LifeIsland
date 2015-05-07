@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09CD64F3DF39913E59F13CE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E335463D4AAFE7C5CAA8A /* libPods.a */; };
+		5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B971AF9C14F008AA34E /* OtherViewController.swift */; };
+		5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B981AF9C14F008AA34E /* OtherViewController.xib */; };
+		5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B9B1AF9C1E5008AA34E /* CalendarViewController.swift */; };
+		5F260B9E1AF9C1E5008AA34E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B9C1AF9C1E5008AA34E /* CalendarViewController.xib */; };
+		5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B9F1AF9C1F0008AA34E /* ChatViewController.swift */; };
+		5F260BA21AF9C1F0008AA34E /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260BA01AF9C1F0008AA34E /* ChatViewController.xib */; };
 		5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */; };
 		5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BC1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld */; };
 		5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BF1AF1C4D3009076A7 /* ViewController.swift */; };
@@ -27,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D6E335463D4AAFE7C5CAA8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F260B971AF9C14F008AA34E /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		5F260B981AF9C14F008AA34E /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		5F260B9B1AF9C1E5008AA34E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5F260B9C1AF9C1E5008AA34E /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		5F260B9F1AF9C1F0008AA34E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5F260BA01AF9C1F0008AA34E /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		5FE008B51AF1C4D3009076A7 /* LifeIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE008B91AF1C4D3009076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +52,8 @@
 		5FE008CD1AF1C4D3009076A7 /* LifeIslandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeIslandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE008D21AF1C4D3009076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE008D31AF1C4D3009076A7 /* LifeIslandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeIslandTests.swift; sourceTree = "<group>"; };
+		67CE440676753C740646B78F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D8CE0E30BB301C46D0B36C93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CD64F3DF39913E59F13CE0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +75,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46CDA57136BCA54A265D47D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67CE440676753C740646B78F /* Pods.debug.xcconfig */,
+				D8CE0E30BB301C46D0B36C93 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F260B941AF9C0C4008AA34E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5F260B9F1AF9C1F0008AA34E /* ChatViewController.swift */,
+				5F260BA01AF9C1F0008AA34E /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5F260B951AF9C0D3008AA34E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5F260B971AF9C14F008AA34E /* OtherViewController.swift */,
+				5F260B981AF9C14F008AA34E /* OtherViewController.xib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5F260B961AF9C112008AA34E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				5F260B9B1AF9C1E5008AA34E /* CalendarViewController.swift */,
+				5F260B9C1AF9C1E5008AA34E /* CalendarViewController.xib */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		5FE008AC1AF1C4D2009076A7 = {
 			isa = PBXGroup;
 			children = (
 				5FE008B71AF1C4D3009076A7 /* LifeIsland */,
 				5FE008D01AF1C4D3009076A7 /* LifeIslandTests */,
 				5FE008B61AF1C4D3009076A7 /* Products */,
+				46CDA57136BCA54A265D47D1 /* Pods */,
+				87329B3032C34A2873B30C9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +134,9 @@
 		5FE008B71AF1C4D3009076A7 /* LifeIsland */ = {
 			isa = PBXGroup;
 			children = (
+				5F260B961AF9C112008AA34E /* Calendar */,
+				5F260B951AF9C0D3008AA34E /* Other */,
+				5F260B941AF9C0C4008AA34E /* Chat */,
 				5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */,
 				5FE008BF1AF1C4D3009076A7 /* ViewController.swift */,
 				5FE008C11AF1C4D3009076A7 /* Main.storyboard */,
@@ -115,6 +173,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		87329B3032C34A2873B30C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E335463D4AAFE7C5CAA8A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FE008D71AF1C4D3009076A7 /* Build configuration list for PBXNativeTarget "LifeIsland" */;
 			buildPhases = (
+				F6B73D13FDE026D78A66B8DC /* Check Pods Manifest.lock */,
 				5FE008B11AF1C4D2009076A7 /* Sources */,
 				5FE008B21AF1C4D2009076A7 /* Frameworks */,
 				5FE008B31AF1C4D2009076A7 /* Resources */,
+				70B796FA446354FD4010985B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE008C31AF1C4D3009076A7 /* Main.storyboard in Resources */,
+				5F260B9E1AF9C1E5008AA34E /* CalendarViewController.xib in Resources */,
+				5F260BA21AF9C1F0008AA34E /* ChatViewController.xib in Resources */,
+				5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */,
 				5FE008C81AF1C4D3009076A7 /* LaunchScreen.xib in Resources */,
 				5FE008C51AF1C4D3009076A7 /* Images.xcassets in Resources */,
 			);
@@ -210,13 +281,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70B796FA446354FD4010985B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B73D13FDE026D78A66B8DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FE008B11AF1C4D2009076A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */,
 				5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */,
+				5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */,
 				5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */,
+				5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */,
 				5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +449,7 @@
 		};
 		5FE008D81AF1C4D3009076A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CE440676753C740646B78F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LifeIsland/Info.plist;
@@ -352,6 +460,7 @@
 		};
 		5FE008D91AF1C4D3009076A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CE0E30BB301C46D0B36C93 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LifeIsland/Info.plist;
@@ -413,6 +522,7 @@
 				5FE008D91AF1C4D3009076A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FE008DA1AF1C4D3009076A7 /* Build configuration list for PBXNativeTarget "LifeIslandTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +531,7 @@
 				5FE008DC1AF1C4D3009076A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

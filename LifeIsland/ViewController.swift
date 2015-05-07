@@ -12,8 +12,23 @@ class ViewController: UIViewController {
 
     
     var RootTaB:UITabBarController?
+    
+    func obsert  (noti:NSNotification){
+        var data:Array<OrderModel>? = noti.object as? Array<OrderModel>
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert:"), name: UPDateUSERORDER, object: nil)
+        
+        var dataMg = DataManager.getInstance
+        dataMg.getAllOrders("ad1ce530g8bzhfi", userId:"1",offset:0)
+        
+       
+        
         // Do any additional setup after loading the view, typically from a nib.
         RootTaB = UITabBarController()
         var CalendarVC = CalendarViewController();

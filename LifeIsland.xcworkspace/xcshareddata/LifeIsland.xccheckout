@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F05588F9-DF6B-4A7B-90E1-AB4B9A6C1FE5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LifeIsland</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D2961FCC950A4B52850F9B52B8F8C19FDCEA59FA</key>
+		<string>github.com:zhshijie/LifeIsland.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LifeIsland.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D2961FCC950A4B52850F9B52B8F8C19FDCEA59FA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:zhshijie/LifeIsland.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D2961FCC950A4B52850F9B52B8F8C19FDCEA59FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2961FCC950A4B52850F9B52B8F8C19FDCEA59FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LifeIsland</string>
+		</dict>
+	</array>
+</dict>
+</plist>

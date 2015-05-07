@@ -14,6 +14,7 @@
 		5F260B9E1AF9C1E5008AA34E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B9C1AF9C1E5008AA34E /* CalendarViewController.xib */; };
 		5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B9F1AF9C1F0008AA34E /* ChatViewController.swift */; };
 		5F260BA21AF9C1F0008AA34E /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260BA01AF9C1F0008AA34E /* ChatViewController.xib */; };
+		5F260BA71AFAF3F3008AA34E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260BA61AFAF3F3008AA34E /* DataManager.swift */; };
 		5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */; };
 		5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BC1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld */; };
 		5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BF1AF1C4D3009076A7 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		5F260B9C1AF9C1E5008AA34E /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		5F260B9F1AF9C1F0008AA34E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5F260BA01AF9C1F0008AA34E /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		5F260BA61AFAF3F3008AA34E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5FE008B51AF1C4D3009076A7 /* LifeIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE008B91AF1C4D3009076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		5F260BA51AFAF3E9008AA34E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F260BA61AFAF3F3008AA34E /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5FE008AC1AF1C4D2009076A7 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		5FE008B71AF1C4D3009076A7 /* LifeIsland */ = {
 			isa = PBXGroup;
 			children = (
+				5F260BA51AFAF3E9008AA34E /* Data */,
 				5F260B961AF9C112008AA34E /* Calendar */,
 				5F260B951AF9C0D3008AA34E /* Other */,
 				5F260B941AF9C0C4008AA34E /* Chat */,
@@ -322,6 +333,7 @@
 				5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */,
 				5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */,
 				5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */,
+				5F260BA71AFAF3F3008AA34E /* DataManager.swift in Sources */,
 				5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */,
 				5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */,
 				5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */,

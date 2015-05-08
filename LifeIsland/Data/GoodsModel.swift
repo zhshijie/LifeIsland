@@ -12,15 +12,15 @@ import UIKit
 *  商品的数据模型
 */
 class GoodsModel: NSObject {
-    var name:String?
-    var id:String?
+    var name:String? //
+    var id:String? //商品的id
     var addTime:String?
     var createTime:String?
     var dishName:String?
     var hotelName:String?
-    var price:Float?
-    var quantity:Int?
-    var totalPrice:Float?
+    var price:Float?  //商品价格
+    var quantity:Int? //
+    var totalPrice:Float? //
     
     
 }

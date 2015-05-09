@@ -18,4 +18,5 @@ class User: NSObject {
     var major:String?
     var age:Int?
     var height:Int?
+    var figure:String?
 }

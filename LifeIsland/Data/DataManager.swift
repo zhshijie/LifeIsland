@@ -12,6 +12,7 @@ let _dataManager = DataManager()
 class DataManager: NSObject,ASIHTTPRequestDelegate{
    
     var ordersArr: Array<OrderModel>?
+    var cache:ASIDownloadCache?
     /**
     单例模式，获得数据管理类
     
@@ -19,7 +20,13 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
     */
     class var getInstance:DataManager
     {
+        if _dataManager.ordersArr == nil{
         _dataManager.ordersArr = Array<OrderModel>()
+        }
+        if _dataManager.cache == nil
+        {
+       _dataManager.cache = ASIDownloadCache()
+        }
         return _dataManager
     }
     
@@ -35,18 +42,38 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
     func getAllOrders(userName:String!,userId:String!,offset:Int!)
     {
         
-        var url = NSURL(string: "http://shenghuodao.gotoip2.com/work/main.php");
-        var request =  ASIFormDataRequest(URL:url)
-        request.setPostValue(userName, forKey: "user_name")
-        request.setPostValue(userId, forKey: "user_id")
-        request.setPostValue("lgst", forKey: "sys")
-        request.setPostValue("lgst_nor", forKey: "ctrl")
-        request.setPostValue("scaned_orders", forKey: "action")
-        request.setPostValue("20", forKey: "limit");
-        request.setPostValue("\(offset)", forKey: "offset");
-
-    
+        let off = "offset=\(offset)"
+        
+        var urlString = "http://shenghuodao.gotoip2.com/work/main.php?user_name="+userName+"&user_id="+userId+"&sys=lgst&ctrl=lgst_nor&action=scaned_orders&limit=20&"+off
+        var url = NSURL(string: urlString);
+        
+        
+        var request =  ASIHTTPRequest(URL:url)
+        
+        request.requestMethod = "GET"
+     
+        var path = NSHomeDirectory().stringByAppendingPathComponent("Documents")
+        cache!.storagePath = path
+        cache!.defaultCachePolicy = ASIOnlyLoadIfNotCachedCachePolicy
+        
+        request.cacheStoragePolicy = ASICachePermanentlyCacheStoragePolicy
+        request.downloadCache = cache
+        
         request.setCompletionBlock { () -> Void in
+            
+            
+            //---------------判断数据的来源:网络 or缓存------------------
+            
+            if (request.didUseCachedResponse) {
+                
+                NSLog("数据来自缓存");
+                
+            } else {
+                
+                NSLog("数据来自网络");
+                
+            }
+            
             var responseData = request.responseData()
             
             var error:NSErrorPointer?
@@ -324,8 +351,53 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
         return signSuccess
     }
     
+    /**
+    JSON格式转换
+    
+    :param: jsonString json字符串
+    
+    :returns: 解析的内容
+    */
+    func JsonStringToDiction(jsonString:String!)->AnyObject?
+    {
+        var data = jsonString.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let  AllOrderData: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options:.MutableLeaves, error:nil)
+      
+        return AllOrderData
+    }
     
     
+    /**
+    将账单缓存到本地
+    */
+    func OrderDataCache()
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        var archdata = NSKeyedArchiver.archivedDataWithRootObject(self.ordersArr!)
+        ud.setObject(archdata, forKey: "orderArr")
+        
+    }
+    
+    /**
+    从本地中获得缓存的账单
+
+    
+    :returns: 如果本地有数据，则返回true，否则则返回false
+    */
+    func GetOrderFromCache()->Bool
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        var unarchdata:NSData? = ud.objectForKey("orderArr") as? NSData
+        if unarchdata != nil
+        {
+        var data:Array<OrderModel>? = NSKeyedUnarchiver.unarchiveObjectWithData(unarchdata!) as? Array<OrderModel>
+        self.ordersArr = data;
+            
+            return true
+        }
+        return false
+    }
     
     
 }

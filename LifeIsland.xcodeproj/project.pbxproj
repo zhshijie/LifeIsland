@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09CD64F3DF39913E59F13CE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E335463D4AAFE7C5CAA8A /* libPods.a */; };
+		5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1F78DF1AFC806700C9E7EE /* UserManager.swift */; };
 		5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B971AF9C14F008AA34E /* OtherViewController.swift */; };
 		5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B981AF9C14F008AA34E /* OtherViewController.xib */; };
 		5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B9B1AF9C1E5008AA34E /* CalendarViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1D6E335463D4AAFE7C5CAA8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1F78DE1AFB9C0700C9E7EE /* until.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = until.h; sourceTree = "<group>"; };
+		5F1F78DF1AFC806700C9E7EE /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		5F260B971AF9C14F008AA34E /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		5F260B981AF9C14F008AA34E /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
 		5F260B9B1AF9C1E5008AA34E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				5F260BAA1AFB0783008AA34E /* OrderModel.swift */,
 				5F260BAC1AFB0DC0008AA34E /* GoodsModel.swift */,
 				5F1F78DE1AFB9C0700C9E7EE /* until.h */,
+				5F1F78DF1AFC806700C9E7EE /* UserManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */,
 				5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */,
 				5F260BAD1AFB0DC0008AA34E /* GoodsModel.swift in Sources */,
+				5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */,
 				5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

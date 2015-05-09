@@ -4,4 +4,5 @@
 
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
+#import "ASIDownloadCache.h"
 #import "until.h"

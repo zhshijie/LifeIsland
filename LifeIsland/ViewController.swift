@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     func obsert  (noti:NSNotification){
         var data:Array<OrderModel>? = noti.object as? Array<OrderModel>
         
+        DataManager.getInstance.OrderDataCache()
+        
+        print(DataManager.getInstance.GetOrderFromCache())
+
     }
     
     
@@ -26,17 +30,33 @@ class ViewController: UIViewController {
         
         var dataMg = DataManager.getInstance
 //        dataMg.getAllOrders("ad1ce530g8bzhfi", userId:"1",offset:0)
+            if DataManager.getInstance.GetOrderFromCache()
+            {
+                var data:Array<OrderModel> = dataMg.ordersArr!
+                print(data[0].items![0].addTime)
+            
+            }
+
+        
+        
         print("---------------------\n")
 //        print(dataMg.sign("ad1ce530g8bzhfi", userId: "1", regionId: "3774"))v
 //        var data:OrderModel = dataMg.getTheOrder("ad1ce530g8bzhfi", userId: "1", orderId: "2271", eventId: "5")
 //        
 //        print(data.address)
-        dataMg.getTheGoods("ad1ce530g8bzhfi", userId: "1", eventId: "5", items: ["5","4"])
+//        dataMg.getTheGoods("ad1ce530g8bzhfi", userId: "1", eventId: "5", items: ["5","4"])
         
         print("\n---------------------\n")
-
-       
-        
+//        
+//        var str = "{\"user_name\":\"ad1ce530g8bzhfi\",\"user_id\":\"1\",\"order_id\":\" 2271\",\"event_id\":\"5\",\"sys\":\"lgst\" ,\"ctrl\":\"lgst_nor\",\"action\":\"order_lgst\"}"
+//        
+//        var data: AnyObject? = dataMg.JsonStringToDiction(str)
+//        var data = str.dataUsingEncoding(NSUTF8StringEncoding)
+//       
+//         let  AllOrderData: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options:.MutableLeaves, error:nil)
+//        
+//        print(AllOrderData)
+//        
         // Do any additional setup after loading the view, typically from a nib.
         RootTaB = UITabBarController()
         var CalendarVC = CalendarViewController();

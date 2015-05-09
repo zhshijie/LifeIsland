@@ -91,7 +91,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8m-oM-piF">
                     <rect key="frame" x="15" y="326" width="86" height="31"/>
                     <color key="backgroundColor" red="1" green="0.62665510607419661" blue="0.24345736173903576" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="工作模式">
+                    <state key="normal" title="工作岗位">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>

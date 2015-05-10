@@ -44,8 +44,8 @@ class ViewController: UIViewController {
 //            
 //            }
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert1:"), name: UPDateUSERDATA, object: nil)
-        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert1:"), name: UPDateUSERDATA, object: nil)
+//        
         var userMg = UserManager.getInstance
         //登录
 //       var stauts =  UserManager.getInstance.logInAction("ddddd", password: "zsj5754295");

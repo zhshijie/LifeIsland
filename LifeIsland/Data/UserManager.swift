@@ -73,6 +73,7 @@ class UserManager: NSObject {
             {
                 self.user!.id = (data!.objectForKey("user_id") as!NSString).integerValue
                 self.user!.userName = userName
+                self.SaveUserNameToCache()
             }
         }
         request.delegate = self
@@ -961,6 +962,32 @@ class UserManager: NSObject {
     
     
     /**
+    缓存已经的 登录的用户名
+    */
+    func SaveUserNameToCache()
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        ud.setObject(self.user!.userName, forKey: "userName")
+    }
+    
+    
+    /**
+    从缓存中获取已经登录对用户名
+    */
+    func GetUserNameFormCache()
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        self.user!.userName = ud.objectForKey("userName") as? String
+    }
+    
+    
+    func ClearUserData()
+    {
+        
+    }
+    
+    
+    /**
     更改用户信息
     
     :param: postDic 请求数据
@@ -1006,4 +1033,7 @@ class UserManager: NSObject {
         request.startSynchronous()
         return status
     }
+    
+    
+    
 }

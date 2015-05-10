@@ -26,19 +26,42 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert:"), name: UPDateUSERORDER, object: nil)
+//         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert:"), name: UPDateUSERORDER, object: nil)
+//        
+//        var dataMg = DataManager.getInstance
+////        dataMg.getAllOrders("ad1ce530g8bzhfi", userId:"1",offset:0)
+//            if DataManager.getInstance.GetOrderFromCache()
+//            {
+//                var data:Array<OrderModel> = dataMg.ordersArr!
+//                print(data[0].items![0].addTime)
+//            
+//            }
         
-        var dataMg = DataManager.getInstance
-//        dataMg.getAllOrders("ad1ce530g8bzhfi", userId:"1",offset:0)
-            if DataManager.getInstance.GetOrderFromCache()
-            {
-                var data:Array<OrderModel> = dataMg.ordersArr!
-                print(data[0].items![0].addTime)
-            
-            }
-
+        
+        var userMg = UserManager.getInstance
+        //登录
+//       var stauts =  UserManager.getInstance.logInAction("ddddd", password: "zsj5754295");
+//        
+//            if stauts == 0
+//            {
+//                print("userId = \(userMg.user!.id)")
+//            }
+        
+        //注册 其中验证码subPin是固定的
+//        var stauts = UserManager.getInstance.signAciton("ddddd", password: "zsj5754295", repassword: "zsj5754295", email: "dddddd@qq.com",subPin:"zxtd")
+//        print("statau = \(stauts)")
         
         
+        
+        
+        
+        
+        
+        
+        //修改用户信息
+//        var status =  UserManager.getInstance.changeUserHeight("ddddd", height: 100)
+//         print("statau = \(status)")
+//
         print("---------------------\n")
 //        print(dataMg.sign("ad1ce530g8bzhfi", userId: "1", regionId: "3774"))v
 //        var data:OrderModel = dataMg.getTheOrder("ad1ce530g8bzhfi", userId: "1", orderId: "2271", eventId: "5")

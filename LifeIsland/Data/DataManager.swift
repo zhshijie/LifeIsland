@@ -20,14 +20,13 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
     */
     class var getInstance:DataManager
     {
-        if _dataManager.ordersArr == nil{
-        _dataManager.ordersArr = Array<OrderModel>()
-        }
-        if _dataManager.cache == nil
-        {
-       _dataManager.cache = ASIDownloadCache()
-        }
+       
         return _dataManager
+    }
+    
+    override init() {
+        ordersArr = Array<OrderModel>()
+        cache = ASIDownloadCache()
     }
     
     

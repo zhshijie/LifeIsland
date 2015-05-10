@@ -9,6 +9,8 @@
 import UIKit
 
 class User: NSObject {
+    //基本信息
+    var id:Int?
     var userName:String?
     var email:String?
     var sex:Int?
@@ -19,4 +21,19 @@ class User: NSObject {
     var age:Int?
     var height:Int?
     var figure:String?
+    
+    //应聘信息
+    
+    var qq:String?
+    var realName:String?
+    var mobilePhone:String?
+    var agentPhone:String?
+    var jobWant:String?
+    var cerId:String?
+    var workInfo:String?
+    
+    //企业信息
+    
+    var licence:String?
+    var comInfo:String?
 }

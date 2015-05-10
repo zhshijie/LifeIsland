@@ -857,7 +857,12 @@ class UserManager: NSObject {
     
     
     
+    /**
+    从后台获取数据 ,采用异步请求，获得数据后会发送一个 UPDateUSERDATA 通知，传过去一个用户数据模型
     
+    :param: userName 用户名
+    :param: userId   用户id
+    */
     func getUserDataFromNetwork(userName:String!,userId:Int!)
     {
         
@@ -883,11 +888,74 @@ class UserManager: NSObject {
             if stauts == 0
             {
                 self.user!.id = (data!.objectForKey("user_id") as!NSString).integerValue
+                self.user!.sex = (data!.objectForKey("sex") as? NSString)!.integerValue
+                self.user!.email = (data!.objectForKey("email") as?String)
+                self.user!.telPhone = data!.objectForKey("tel_phone") as?String
+                self.user!.school = data!.objectForKey("school") as?String
+                self.user!.entranceYear = (data!.objectForKey("entrance_year") as!NSString).integerValue
+                self.user!.major = data!.objectForKey("major") as?String
+                self.user!.age = (data!.objectForKey("age") as!NSString).integerValue
+                self.user!.height = (data!.objectForKey("height") as!NSString).integerValue
+                self.user!.figure = data!.objectForKey("figure") as?String
+                self.user!.qq = data!.objectForKey("qq") as?String
+                self.user!.realName = data!.objectForKey("real_name") as?String
+                self.user!.mobilePhone = data!.objectForKey("mobile_phone")as?String
+                self.user!.agentPhone = data!.objectForKey("agent_phone")as?String
+                self.user!.jobWant = data!.objectForKey("job_want") as?String
+                self.user!.cerId = data!.objectForKey("cer_id") as?String
+                self.user!.workInfo = data!.objectForKey("work_info") as?String
+                self.user!.comInfo = data!.objectForKey("com_info") as?String
+                self.user!.licence = data!.objectForKey("licence") as?String
                 self.user!.userName = userName
+                
+                
+                self.SaveUsrDataCache(self.user!)
+                NSNotificationCenter.defaultCenter().postNotificationName(UPDateUSERDATA, object: self.user!)
             }
+            
         }
         request.delegate = self
-        request.startSynchronous()
+        request.startAsynchronous()
+    }
+    
+    /**
+    将用户信息保存到本地
+    
+    :param: user 用户信息
+    */
+    func SaveUsrDataCache(user:User!)
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        var archdata = NSKeyedArchiver.archivedDataWithRootObject(user)
+        
+        var key = "userData_\(user.userName!)"
+        ud.setObject(archdata, forKey:key)
+        
+    }
+    
+    /**
+    从本地获取用户信息
+    
+    :param: username 用户名
+    
+    :returns:
+    */
+    func GetUserDataFromCache(username:String!)->Bool
+    {
+        var ud = NSUserDefaults.standardUserDefaults()
+        
+        var key = "userData_\(username)"
+        
+        var unarchdata:NSData? = ud.objectForKey(key) as? NSData
+        if unarchdata != nil
+        {
+            var user =  NSKeyedUnarchiver.unarchiveObjectWithData(unarchdata!) as? User
+            self.user = user
+            return true
+        }
+        
+        
+        return false
     }
     
     

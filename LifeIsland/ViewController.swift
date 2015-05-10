@@ -22,6 +22,13 @@ class ViewController: UIViewController {
 
     }
     
+    func obsert1  (noti:NSNotification){
+        var user:User? = noti.object as? User
+        print(user!.email)
+        
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,16 +44,24 @@ class ViewController: UIViewController {
 //            
 //            }
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("obsert1:"), name: UPDateUSERDATA, object: nil)
         
         var userMg = UserManager.getInstance
         //登录
 //       var stauts =  UserManager.getInstance.logInAction("ddddd", password: "zsj5754295");
-//        
+//        userMg.getUserDataFromNetwork("ddddd", userId: 42)
+        
+
 //            if stauts == 0
 //            {
 //                print("userId = \(userMg.user!.id)")
 //            }
+//        
+//
+//         userMg.GetUserDataFromCache("ddddd")
+//        print(userMg.user!.email)
         
+    
         //注册 其中验证码subPin是固定的
 //        var stauts = UserManager.getInstance.signAciton("ddddd", password: "zsj5754295", repassword: "zsj5754295", email: "dddddd@qq.com",subPin:"zxtd")
 //        print("statau = \(stauts)")

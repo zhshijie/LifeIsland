@@ -10,5 +10,6 @@
 #define LifeIsland_until_h
 
 
-#define UPDateUSERORDER "updatauserorder" // 用户的账单已经刷新
+#define UPDateUSERORDER "updateuserorder" // 用户的账单已经刷新
+#define UPDateUSERDATA "updateuserdata"  //用户数据已经从网络获取
 #endif

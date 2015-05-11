@@ -859,15 +859,16 @@ class UserManager: NSObject {
     
     
     /**
-    从后台获取数据 ,采用异步请求，获得数据后会发送一个 UPDateUSERDATA 通知，传过去一个用户数据模型
+    从后台获取数据 ,同步请求
     
     :param: userName 用户名
     :param: userId   用户id
     */
-    func getUserDataFromNetwork(userName:String!,userId:Int!)
+    func getUserDataFromNetwork(userName:String!,userId:Int!)->Int
     {
         
         var url = NSURL(string: "http://shenghuodao.gotoip2.com/work/main.php");
+        var stauts = -1
         var request =  ASIFormDataRequest(URL:url)
         request.setPostValue(userName, forKey: "user_name")
         request.setPostValue(userId, forKey: "user_id")
@@ -884,7 +885,7 @@ class UserManager: NSObject {
                 print("获取信息失败，请重新获取")
                 return
             }
-            let stauts = (data!.objectForKey("status") as! NSString).integerValue
+            stauts = (data!.objectForKey("status") as! NSString).integerValue
             
             if stauts == 0
             {
@@ -916,8 +917,14 @@ class UserManager: NSObject {
             
         }
         request.delegate = self
-        request.startAsynchronous()
+        request.startSynchronous()
+        return stauts
     }
+    
+    
+    
+    
+    
     
     /**
     将用户信息保存到本地

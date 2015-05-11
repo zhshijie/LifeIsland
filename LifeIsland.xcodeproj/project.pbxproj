@@ -19,10 +19,38 @@
 		5F260BA91AFB001E008AA34E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260BA81AFB001E008AA34E /* User.swift */; };
 		5F260BAB1AFB0783008AA34E /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260BAA1AFB0783008AA34E /* OrderModel.swift */; };
 		5F260BAD1AFB0DC0008AA34E /* GoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260BAC1AFB0DC0008AA34E /* GoodsModel.swift */; };
+		5F5720A61AFF99F9006C7521 /* 图标cc-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57208C1AFF99F9006C7521 /* 图标cc-01.png */; };
+		5F5720A71AFF99F9006C7521 /* 图标cc-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57208D1AFF99F9006C7521 /* 图标cc-02.png */; };
+		5F5720A81AFF99F9006C7521 /* 图标cc-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57208E1AFF99F9006C7521 /* 图标cc-03.png */; };
+		5F5720A91AFF99F9006C7521 /* 图标cc-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57208F1AFF99F9006C7521 /* 图标cc-04.png */; };
+		5F5720AA1AFF99F9006C7521 /* 图标cc-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720901AFF99F9006C7521 /* 图标cc-05.png */; };
+		5F5720AB1AFF99F9006C7521 /* 图标cc-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720911AFF99F9006C7521 /* 图标cc-06.png */; };
+		5F5720AC1AFF99F9006C7521 /* 图标cc-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720921AFF99F9006C7521 /* 图标cc-07.png */; };
+		5F5720AD1AFF99F9006C7521 /* 图标cc-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720931AFF99F9006C7521 /* 图标cc-08.png */; };
+		5F5720AE1AFF99F9006C7521 /* 图标cc-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720941AFF99F9006C7521 /* 图标cc-09.png */; };
+		5F5720AF1AFF99F9006C7521 /* 图标cc-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720951AFF99F9006C7521 /* 图标cc-10.png */; };
+		5F5720B01AFF99F9006C7521 /* 图标cc-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720961AFF99F9006C7521 /* 图标cc-11.png */; };
+		5F5720B11AFF99F9006C7521 /* 图标cc-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720971AFF99F9006C7521 /* 图标cc-12.png */; };
+		5F5720B21AFF99F9006C7521 /* 图标cc-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720981AFF99F9006C7521 /* 图标cc-13.png */; };
+		5F5720B31AFF99F9006C7521 /* 图标cc-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720991AFF99F9006C7521 /* 图标cc-14.png */; };
+		5F5720B41AFF99F9006C7521 /* 图标cc-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209A1AFF99F9006C7521 /* 图标cc-15.png */; };
+		5F5720B51AFF99F9006C7521 /* 图标cc-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209B1AFF99F9006C7521 /* 图标cc-16.png */; };
+		5F5720B61AFF99F9006C7521 /* 图标cc-17.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209C1AFF99F9006C7521 /* 图标cc-17.png */; };
+		5F5720B71AFF99F9006C7521 /* 图标cc-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209D1AFF99F9006C7521 /* 图标cc-18.png */; };
+		5F5720B81AFF99F9006C7521 /* 图标cc-19.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209E1AFF99F9006C7521 /* 图标cc-19.png */; };
+		5F5720B91AFF99F9006C7521 /* 图标cc-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F57209F1AFF99F9006C7521 /* 图标cc-30.png */; };
+		5F5720BA1AFF99F9006C7521 /* 图标cc-31.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A01AFF99F9006C7521 /* 图标cc-31.png */; };
+		5F5720BB1AFF99F9006C7521 /* 图标cc-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A11AFF99F9006C7521 /* 图标cc-32.png */; };
+		5F5720BC1AFF99F9006C7521 /* 图标cc-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A21AFF99F9006C7521 /* 图标cc-33.png */; };
+		5F5720BD1AFF99F9006C7521 /* 图标cc-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A31AFF99F9006C7521 /* 图标cc-34.png */; };
+		5F5720BE1AFF99F9006C7521 /* 图标cc-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A41AFF99F9006C7521 /* 图标cc-35.png */; };
+		5F5720BF1AFF99F9006C7521 /* 图标cc-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720A51AFF99F9006C7521 /* 图标cc-36.png */; };
+		5F5720C21AFFB82F006C7521 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5720C01AFFB82F006C7521 /* LogInViewController.swift */; };
+		5F5720C71B004673006C7521 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5720C51B004673006C7521 /* SignViewController.swift */; };
+		5F5720C81B004673006C7521 /* SignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720C61B004673006C7521 /* SignViewController.xib */; };
+		5F5720CA1B0073B8006C7521 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720C91B0073B8006C7521 /* LogInViewController.xib */; };
 		5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */; };
 		5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BC1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld */; };
-		5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BF1AF1C4D3009076A7 /* ViewController.swift */; };
-		5FE008C31AF1C4D3009076A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE008C11AF1C4D3009076A7 /* Main.storyboard */; };
 		5FE008C51AF1C4D3009076A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE008C41AF1C4D3009076A7 /* Images.xcassets */; };
 		5FE008C81AF1C4D3009076A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE008C61AF1C4D3009076A7 /* LaunchScreen.xib */; };
 		5FE008D41AF1C4D3009076A7 /* LifeIslandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008D31AF1C4D3009076A7 /* LifeIslandTests.swift */; };
@@ -53,12 +81,40 @@
 		5F260BAA1AFB0783008AA34E /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		5F260BAC1AFB0DC0008AA34E /* GoodsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsModel.swift; sourceTree = "<group>"; };
 		5F260BAE1AFB19EB008AA34E /* LifeIsland-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeIsland-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F57208C1AFF99F9006C7521 /* 图标cc-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-01.png"; sourceTree = "<group>"; };
+		5F57208D1AFF99F9006C7521 /* 图标cc-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-02.png"; sourceTree = "<group>"; };
+		5F57208E1AFF99F9006C7521 /* 图标cc-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-03.png"; sourceTree = "<group>"; };
+		5F57208F1AFF99F9006C7521 /* 图标cc-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-04.png"; sourceTree = "<group>"; };
+		5F5720901AFF99F9006C7521 /* 图标cc-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-05.png"; sourceTree = "<group>"; };
+		5F5720911AFF99F9006C7521 /* 图标cc-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-06.png"; sourceTree = "<group>"; };
+		5F5720921AFF99F9006C7521 /* 图标cc-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-07.png"; sourceTree = "<group>"; };
+		5F5720931AFF99F9006C7521 /* 图标cc-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-08.png"; sourceTree = "<group>"; };
+		5F5720941AFF99F9006C7521 /* 图标cc-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-09.png"; sourceTree = "<group>"; };
+		5F5720951AFF99F9006C7521 /* 图标cc-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-10.png"; sourceTree = "<group>"; };
+		5F5720961AFF99F9006C7521 /* 图标cc-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-11.png"; sourceTree = "<group>"; };
+		5F5720971AFF99F9006C7521 /* 图标cc-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-12.png"; sourceTree = "<group>"; };
+		5F5720981AFF99F9006C7521 /* 图标cc-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-13.png"; sourceTree = "<group>"; };
+		5F5720991AFF99F9006C7521 /* 图标cc-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-14.png"; sourceTree = "<group>"; };
+		5F57209A1AFF99F9006C7521 /* 图标cc-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-15.png"; sourceTree = "<group>"; };
+		5F57209B1AFF99F9006C7521 /* 图标cc-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-16.png"; sourceTree = "<group>"; };
+		5F57209C1AFF99F9006C7521 /* 图标cc-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-17.png"; sourceTree = "<group>"; };
+		5F57209D1AFF99F9006C7521 /* 图标cc-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-18.png"; sourceTree = "<group>"; };
+		5F57209E1AFF99F9006C7521 /* 图标cc-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-19.png"; sourceTree = "<group>"; };
+		5F57209F1AFF99F9006C7521 /* 图标cc-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-30.png"; sourceTree = "<group>"; };
+		5F5720A01AFF99F9006C7521 /* 图标cc-31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-31.png"; sourceTree = "<group>"; };
+		5F5720A11AFF99F9006C7521 /* 图标cc-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-32.png"; sourceTree = "<group>"; };
+		5F5720A21AFF99F9006C7521 /* 图标cc-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-33.png"; sourceTree = "<group>"; };
+		5F5720A31AFF99F9006C7521 /* 图标cc-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-34.png"; sourceTree = "<group>"; };
+		5F5720A41AFF99F9006C7521 /* 图标cc-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-35.png"; sourceTree = "<group>"; };
+		5F5720A51AFF99F9006C7521 /* 图标cc-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标cc-36.png"; sourceTree = "<group>"; };
+		5F5720C01AFFB82F006C7521 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = LifeIsland/LogInViewController.swift; sourceTree = SOURCE_ROOT; };
+		5F5720C51B004673006C7521 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		5F5720C61B004673006C7521 /* SignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignViewController.xib; sourceTree = "<group>"; };
+		5F5720C91B0073B8006C7521 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		5FE008B51AF1C4D3009076A7 /* LifeIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE008B91AF1C4D3009076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FE008BD1AF1C4D3009076A7 /* LifeIsland.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeIsland.xcdatamodel; sourceTree = "<group>"; };
-		5FE008BF1AF1C4D3009076A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FE008C21AF1C4D3009076A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FE008C41AF1C4D3009076A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5FE008C71AF1C4D3009076A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5FE008CD1AF1C4D3009076A7 /* LifeIslandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeIslandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +192,50 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5F57208B1AFF99F9006C7521 /* 图标元素_1 */ = {
+			isa = PBXGroup;
+			children = (
+				5F57208C1AFF99F9006C7521 /* 图标cc-01.png */,
+				5F57208D1AFF99F9006C7521 /* 图标cc-02.png */,
+				5F57208E1AFF99F9006C7521 /* 图标cc-03.png */,
+				5F57208F1AFF99F9006C7521 /* 图标cc-04.png */,
+				5F5720901AFF99F9006C7521 /* 图标cc-05.png */,
+				5F5720911AFF99F9006C7521 /* 图标cc-06.png */,
+				5F5720921AFF99F9006C7521 /* 图标cc-07.png */,
+				5F5720931AFF99F9006C7521 /* 图标cc-08.png */,
+				5F5720941AFF99F9006C7521 /* 图标cc-09.png */,
+				5F5720951AFF99F9006C7521 /* 图标cc-10.png */,
+				5F5720961AFF99F9006C7521 /* 图标cc-11.png */,
+				5F5720971AFF99F9006C7521 /* 图标cc-12.png */,
+				5F5720981AFF99F9006C7521 /* 图标cc-13.png */,
+				5F5720991AFF99F9006C7521 /* 图标cc-14.png */,
+				5F57209A1AFF99F9006C7521 /* 图标cc-15.png */,
+				5F57209B1AFF99F9006C7521 /* 图标cc-16.png */,
+				5F57209C1AFF99F9006C7521 /* 图标cc-17.png */,
+				5F57209D1AFF99F9006C7521 /* 图标cc-18.png */,
+				5F57209E1AFF99F9006C7521 /* 图标cc-19.png */,
+				5F57209F1AFF99F9006C7521 /* 图标cc-30.png */,
+				5F5720A01AFF99F9006C7521 /* 图标cc-31.png */,
+				5F5720A11AFF99F9006C7521 /* 图标cc-32.png */,
+				5F5720A21AFF99F9006C7521 /* 图标cc-33.png */,
+				5F5720A31AFF99F9006C7521 /* 图标cc-34.png */,
+				5F5720A41AFF99F9006C7521 /* 图标cc-35.png */,
+				5F5720A51AFF99F9006C7521 /* 图标cc-36.png */,
+			);
+			path = "图标元素_1";
+			sourceTree = "<group>";
+		};
+		5F5720C41B00462E006C7521 /* LogAndSign */ = {
+			isa = PBXGroup;
+			children = (
+				5F5720C01AFFB82F006C7521 /* LogInViewController.swift */,
+				5F5720C91B0073B8006C7521 /* LogInViewController.xib */,
+				5F5720C51B004673006C7521 /* SignViewController.swift */,
+				5F5720C61B004673006C7521 /* SignViewController.xib */,
+			);
+			path = LogAndSign;
+			sourceTree = "<group>";
+		};
 		5FE008AC1AF1C4D2009076A7 = {
 			isa = PBXGroup;
 			children = (
@@ -159,17 +259,17 @@
 		5FE008B71AF1C4D3009076A7 /* LifeIsland */ = {
 			isa = PBXGroup;
 			children = (
+				5F5720C41B00462E006C7521 /* LogAndSign */,
 				5F260BA51AFAF3E9008AA34E /* Data */,
 				5F260B961AF9C112008AA34E /* Calendar */,
 				5F260B951AF9C0D3008AA34E /* Other */,
 				5F260B941AF9C0C4008AA34E /* Chat */,
 				5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */,
-				5FE008BF1AF1C4D3009076A7 /* ViewController.swift */,
-				5FE008C11AF1C4D3009076A7 /* Main.storyboard */,
 				5FE008C41AF1C4D3009076A7 /* Images.xcassets */,
 				5FE008C61AF1C4D3009076A7 /* LaunchScreen.xib */,
 				5FE008BC1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld */,
 				5FE008B81AF1C4D3009076A7 /* Supporting Files */,
+				5F57208B1AFF99F9006C7521 /* 图标元素_1 */,
 				5F260BAE1AFB19EB008AA34E /* LifeIsland-Bridging-Header.h */,
 			);
 			path = LifeIsland;
@@ -290,12 +390,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE008C31AF1C4D3009076A7 /* Main.storyboard in Resources */,
+				5F5720A71AFF99F9006C7521 /* 图标cc-02.png in Resources */,
 				5F260B9E1AF9C1E5008AA34E /* CalendarViewController.xib in Resources */,
 				5F260BA21AF9C1F0008AA34E /* ChatViewController.xib in Resources */,
+				5F5720BD1AFF99F9006C7521 /* 图标cc-34.png in Resources */,
 				5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */,
 				5FE008C81AF1C4D3009076A7 /* LaunchScreen.xib in Resources */,
 				5FE008C51AF1C4D3009076A7 /* Images.xcassets in Resources */,
+				5F5720AD1AFF99F9006C7521 /* 图标cc-08.png in Resources */,
+				5F5720C81B004673006C7521 /* SignViewController.xib in Resources */,
+				5F5720B11AFF99F9006C7521 /* 图标cc-12.png in Resources */,
+				5F5720CA1B0073B8006C7521 /* LogInViewController.xib in Resources */,
+				5F5720AB1AFF99F9006C7521 /* 图标cc-06.png in Resources */,
+				5F5720BA1AFF99F9006C7521 /* 图标cc-31.png in Resources */,
+				5F5720B31AFF99F9006C7521 /* 图标cc-14.png in Resources */,
+				5F5720BF1AFF99F9006C7521 /* 图标cc-36.png in Resources */,
+				5F5720B21AFF99F9006C7521 /* 图标cc-13.png in Resources */,
+				5F5720AF1AFF99F9006C7521 /* 图标cc-10.png in Resources */,
+				5F5720AA1AFF99F9006C7521 /* 图标cc-05.png in Resources */,
+				5F5720A81AFF99F9006C7521 /* 图标cc-03.png in Resources */,
+				5F5720BC1AFF99F9006C7521 /* 图标cc-33.png in Resources */,
+				5F5720A91AFF99F9006C7521 /* 图标cc-04.png in Resources */,
+				5F5720B91AFF99F9006C7521 /* 图标cc-30.png in Resources */,
+				5F5720BB1AFF99F9006C7521 /* 图标cc-32.png in Resources */,
+				5F5720AC1AFF99F9006C7521 /* 图标cc-07.png in Resources */,
+				5F5720A61AFF99F9006C7521 /* 图标cc-01.png in Resources */,
+				5F5720B01AFF99F9006C7521 /* 图标cc-11.png in Resources */,
+				5F5720B81AFF99F9006C7521 /* 图标cc-19.png in Resources */,
+				5F5720B71AFF99F9006C7521 /* 图标cc-18.png in Resources */,
+				5F5720B41AFF99F9006C7521 /* 图标cc-15.png in Resources */,
+				5F5720AE1AFF99F9006C7521 /* 图标cc-09.png in Resources */,
+				5F5720B61AFF99F9006C7521 /* 图标cc-17.png in Resources */,
+				5F5720BE1AFF99F9006C7521 /* 图标cc-35.png in Resources */,
+				5F5720B51AFF99F9006C7521 /* 图标cc-16.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,15 +475,16 @@
 			files = (
 				5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */,
 				5F260BAB1AFB0783008AA34E /* OrderModel.swift in Sources */,
-				5FE008C01AF1C4D3009076A7 /* ViewController.swift in Sources */,
 				5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */,
 				5F260BA71AFAF3F3008AA34E /* DataManager.swift in Sources */,
 				5F260BA91AFB001E008AA34E /* User.swift in Sources */,
 				5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */,
 				5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */,
+				5F5720C21AFFB82F006C7521 /* LogInViewController.swift in Sources */,
 				5F260BAD1AFB0DC0008AA34E /* GoodsModel.swift in Sources */,
 				5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */,
 				5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */,
+				5F5720C71B004673006C7521 /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,14 +507,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FE008C11AF1C4D3009076A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FE008C21AF1C4D3009076A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5FE008C61AF1C4D3009076A7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

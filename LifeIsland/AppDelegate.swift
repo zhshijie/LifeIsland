@@ -13,10 +13,36 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var RootTaB:UITabBarController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds]
+        self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
+        self.window!.makeKeyAndVisible()
+        
+    NSUserDefaults.standardUserDefaults().removeObjectForKey("userName")
+//
+//        RootTaB = UITabBarController()
+//        var CalendarVC = CalendarViewController();
+//        var ChatVC = ChatViewController();
+//        var OtherVC = OtherViewController(nibName:"OtherViewController",bundle:nil);
+//        
+//        var OtherNav = UINavigationController(rootViewController: OtherVC)
+//        var CalendarNav = UINavigationController(rootViewController: CalendarVC)
+//        var ChatNav = UINavigationController(rootViewController: ChatVC)
+//        RootTaB!.setViewControllers([OtherNav,ChatNav,CalendarNav], animated: true);
+//
+//        self.window?.rootViewController = RootTaB
+//        
+        
+        var logVC = LogInViewController(nibName:"LogInViewController",bundle:nil)
+        self.window?.rootViewController = UINavigationController(rootViewController:logVC)
+        
+        
+        
         return true
     }
 

@@ -108,7 +108,7 @@ class LogInViewController: UIViewController {
     func LogInSuccess()
     {
         
-        var  RootTaB = UITabBarController()
+        var  RootTaB = BaseViewController()
         var CalendarVC = CalendarViewController();
         var ChatVC = ChatViewController();
         var OtherVC = OtherViewController(nibName:"OtherViewController",bundle:nil);
@@ -120,11 +120,14 @@ class LogInViewController: UIViewController {
         
         var appDele:UIApplicationDelegate = UIApplication.sharedApplication().delegate!
        
-        appDele.window?!.rootViewController = RootTaB
         
         RootTaB.modalPresentationStyle = .FormSheet
-        self.presentViewController(RootTaB, animated: true, completion: nil)
-        self.dismissViewControllerAnimated(false, completion: nil)
+        RootTaB.modalTransitionStyle  = .FlipHorizontal
+
+        self.view.window?.rootViewController!.presentViewController(RootTaB, animated: true)
+        { () -> Void in
+            appDele.window?!.rootViewController = RootTaB
+        }
         self.removeFromParentViewController()
         
     }
@@ -139,8 +142,10 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 109/255, green: 137/255, blue: 190/255, alpha:1)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
+        
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 109/255, green: 137/255, blue: 190/255, alpha:1)
+//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
 
         self.title = "登录"
         alertView = UIAlertView(title:nil, message: nil, delegate: self, cancelButtonTitle:nil)

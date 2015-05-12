@@ -17,17 +17,18 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHi-fW-uOZ">
                     <rect key="frame" x="15" y="184" width="86" height="31"/>
-                    <color key="backgroundColor" red="1" green="0.63440318069302526" blue="0.19784578420310739" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.59607843137254901" green="0.75686274509803919" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="BpC-LD-VrE"/>
                     </constraints>
                     <state key="normal" title="扫一扫">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-ji-m5I">
                     <rect key="frame" x="117" y="94" width="86" height="90"/>
-                    <color key="backgroundColor" red="0.56616174519999996" green="1" blue="0.75121545789999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="86" id="D9I-qU-b4g"/>
                         <constraint firstAttribute="width" secondItem="yGI-ji-m5I" secondAttribute="height" multiplier="43:45" id="aBA-GK-pQL"/>
@@ -39,17 +40,18 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QL-4v-jTE">
                     <rect key="frame" x="117" y="184" width="86" height="31"/>
-                    <color key="backgroundColor" red="1" green="0.63440318070000001" blue="0.19784578420000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.59607843137254901" green="0.75686274509803919" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="2UC-om-3Vz"/>
                     </constraints>
                     <state key="normal" title="个人资料">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-hN-NhE">
                     <rect key="frame" x="220" y="94" width="86" height="90"/>
-                    <color key="backgroundColor" red="0.56616174519999996" green="1" blue="0.75121545789999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="90" id="17W-bN-N1A"/>
                         <constraint firstAttribute="width" secondItem="vtx-hN-NhE" secondAttribute="height" multiplier="43:45" id="dca-vk-3Bm"/>
@@ -61,17 +63,18 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1I-Il-xPD">
                     <rect key="frame" x="220" y="184" width="86" height="31"/>
-                    <color key="backgroundColor" red="1" green="0.63440318070000001" blue="0.19784578420000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.76470588235294112" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="SzT-FR-dcm"/>
                     </constraints>
                     <state key="normal" title="兼职平台">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1P-Vu-cAb">
                     <rect key="frame" x="15" y="94" width="86" height="90"/>
-                    <color key="backgroundColor" red="0.56616174519999996" green="1" blue="0.75121545789999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="a1P-Vu-cAb" secondAttribute="height" multiplier="43:45" id="9jb-fW-cJf"/>
                         <constraint firstAttribute="height" constant="90" id="Iur-71-ZvT"/>
@@ -83,29 +86,39 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffi-rJ-yPh">
                     <rect key="frame" x="15" y="236" width="86" height="90"/>
-                    <color key="backgroundColor" red="0.56616174519999996" green="1" blue="0.75121545789999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8m-oM-piF">
                     <rect key="frame" x="15" y="326" width="86" height="31"/>
-                    <color key="backgroundColor" red="1" green="0.62665510607419661" blue="0.24345736173903576" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.76470588235294112" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="工作岗位">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图标cc-04.png" translatesAutoresizingMaskIntoConstraints="NO" id="wHC-7s-IQs">
+                    <rect key="frame" x="129" y="108" width="63" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="gka-qG-gdn"/>
+                        <constraint firstAttribute="height" constant="62" id="jYR-Ga-4JQ"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="ffi-rJ-yPh" firstAttribute="centerX" secondItem="o8m-oM-piF" secondAttribute="centerX" id="0qW-jB-QBX"/>
                 <constraint firstItem="v1I-Il-xPD" firstAttribute="top" secondItem="vtx-hN-NhE" secondAttribute="bottom" id="21r-Gh-trZ"/>
                 <constraint firstItem="a1P-Vu-cAb" firstAttribute="height" secondItem="ffi-rJ-yPh" secondAttribute="height" id="7MM-Cg-mPu"/>
                 <constraint firstItem="a1P-Vu-cAb" firstAttribute="centerX" secondItem="ffi-rJ-yPh" secondAttribute="centerX" constant="-5" id="8bb-DZ-2Tu"/>
+                <constraint firstItem="wHC-7s-IQs" firstAttribute="centerY" secondItem="yGI-ji-m5I" secondAttribute="centerY" id="AlZ-f9-F9n"/>
                 <constraint firstItem="a1P-Vu-cAb" firstAttribute="centerX" secondItem="xHi-fW-uOZ" secondAttribute="centerX" id="Azf-Ug-cEB"/>
                 <constraint firstItem="xHi-fW-uOZ" firstAttribute="height" secondItem="o8m-oM-piF" secondAttribute="height" id="B1P-Rm-OSD"/>
                 <constraint firstItem="a1P-Vu-cAb" firstAttribute="width" secondItem="ffi-rJ-yPh" secondAttribute="width" id="B9f-Jy-Pme"/>
                 <constraint firstItem="yGI-ji-m5I" firstAttribute="width" secondItem="vtx-hN-NhE" secondAttribute="width" id="BNi-su-Wve"/>
+                <constraint firstItem="wHC-7s-IQs" firstAttribute="centerX" secondItem="yGI-ji-m5I" secondAttribute="centerX" constant="0.5" id="CWT-Kg-olD"/>
                 <constraint firstItem="v1I-Il-xPD" firstAttribute="centerX" secondItem="vtx-hN-NhE" secondAttribute="centerX" id="EBk-bm-Du1"/>
                 <constraint firstItem="o8m-oM-piF" firstAttribute="top" secondItem="ffi-rJ-yPh" secondAttribute="bottom" id="GxV-wp-RsQ"/>
                 <constraint firstItem="ffi-rJ-yPh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Hk6-C7-bE3"/>
@@ -149,4 +162,7 @@
             <point key="canvasLocation" x="132" y="266"/>
         </view>
     </objects>
+    <resources>
+        <image name="图标cc-04.png" width="132" height="130"/>
+    </resources>
 </document>

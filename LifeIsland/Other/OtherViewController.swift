@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OtherViewController: UIViewController {
+class OtherViewController: UIViewController,UINavigationControllerDelegate{
 
     var otherRootNav:UINavigationController?
     var rootVC:UIViewController?
@@ -16,60 +16,35 @@ class OtherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Other";
-        
-        if hasUserLogIning() == false
-        {
-            PresentToLogInView()
-        }
-    
+        self.title = "其他";
+        self.navigationController?.delegate = self
+      
         
     }
-
-    /**
-    是否用户已经登录
     
-    :returns: 如果已经登录返回true
-    */
-    func hasUserLogIning()->Bool
-    {
-        var hasLog = false
-        var userMg = UserManager.getInstance
-        
-        userMg.GetUserNameFormCache()
-        if userMg.user!.userName != nil {
-            
-            userMg.GetUserDataFromCache(userMg.user!.userName)
-            
-            if userMg.user!.id  == nil
-            {
-                hasLog = false
-            }else{
-                hasLog = true
-            }
+  
+    func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+        if viewController.hidesBottomBarWhenPushed
+        {
+            (self.tabBarController as! BaseViewController).hideTabBar()
         }else
         {
-            hasLog = false
+            (self.tabBarController as! BaseViewController).unHideTabBar()
         }
-        return hasLog
+    }
+
+    
+    override func viewWillAppear(animated: Bool) {
+//        var tab = self.tabBarController! as! BaseViewController
+        self.hidesBottomBarWhenPushed = false
     }
     
-    /**
-    跳转到登录界面
-    */
-    func PresentToLogInView()
-    {
-        var log = LogInViewController(nibName:"LogInViewController",bundle:nil)
-        log.view.frame = UIScreen.mainScreen().bounds
-        var nav = UINavigationController(rootViewController: log)
-        nav.navigationBar.tintColor = UIColor.whiteColor()
-        self.presentViewController(nav, animated: true, completion: nil)
-    }
-    
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

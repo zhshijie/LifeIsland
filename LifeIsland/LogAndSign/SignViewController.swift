@@ -78,7 +78,7 @@ class SignViewController: UIViewController {
     func SignSuccess()
     {
         
-        var  RootTaB = UITabBarController()
+        var  RootTaB = BaseViewController()
         var CalendarVC = CalendarViewController();
         var ChatVC = ChatViewController();
         var OtherVC = OtherViewController(nibName:"OtherViewController",bundle:nil);
@@ -101,10 +101,10 @@ class SignViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UINavigationBar.appearance().barTintColor = UIColor(red: 109/255, green: 137/255, blue: 190/255, alpha:1)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
-        
+//        
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 109/255, green: 137/255, blue: 190/255, alpha:1)
+//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+//        
         alertView = UIAlertView()
         alertView!.title = "注册"
 

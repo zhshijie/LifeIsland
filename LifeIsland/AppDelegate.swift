@@ -13,9 +13,9 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var RootTaB:UITabBarController?
+    var RootTaB:BaseViewController?
 
-
+   
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
         self.window!.makeKeyAndVisible()
         
-    NSUserDefaults.standardUserDefaults().removeObjectForKey("userName")
+    NSUserDefaults.standardUserDefaults().removeObjectForKey("numToLogIn")
 //
 //        RootTaB = UITabBarController()
 //        var CalendarVC = CalendarViewController();
@@ -36,15 +36,98 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        RootTaB!.setViewControllers([OtherNav,ChatNav,CalendarNav], animated: true);
 //
 //        self.window?.rootViewController = RootTaB
-//        
+//      
+        
+        
+        var ud = NSUserDefaults.standardUserDefaults()
+        var num:String? = ud.objectForKey("numToLogIn") as? String
+        
+        if num == nil
+        {
+            var guideVC = GuideViewController(nibName:"GuideViewController",bundle:nil)
+            
+            self.window!.rootViewController = guideVC
+            
+        }else{
+        
+        if hasUserLogIning() == false {
         
         var logVC = LogInViewController(nibName:"LogInViewController",bundle:nil)
-        self.window?.rootViewController = UINavigationController(rootViewController:logVC)
+        var nav = UINavigationController(rootViewController:logVC)
+        self.window?.rootViewController = nav
+        }else
+        {
+            var  RootTaB = BaseViewController()
+            var CalendarVC = CalendarViewController();
+            var ChatVC = ChatViewController();
+            var OtherVC = OtherViewController(nibName:"OtherViewController",bundle:nil);
+            
+            var OtherNav = UINavigationController(rootViewController: OtherVC)
+            var CalendarNav = UINavigationController(rootViewController: CalendarVC)
+            var ChatNav = UINavigationController(rootViewController: ChatVC)
+            
+            RootTaB.setViewControllers([OtherNav,ChatNav,CalendarNav], animated: true);
+            RootTaB.tabBar.hidden = true
+            RootTaB.selectedIndex = 0
+            self.window?.rootViewController = RootTaB
+            
+        }
+        }
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 109/255, green: 137/255, blue: 190/255, alpha:1)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         
-        
+        ud.setObject("1", forKey: "numToLogIn")
         return true
     }
+    
+    
+    
+    
+    /**
+    是否用户已经登录
+    
+    :returns: 如果已经登录返回true
+    */
+    func hasUserLogIning()->Bool
+    {
+        var hasLog = false
+        var userMg = UserManager.getInstance
+
+        userMg.GetUserNameFormCache()
+        if userMg.user!.userName != nil {
+
+            userMg.GetUserDataFromCache(userMg.user!.userName)
+
+            if userMg.user!.id  == nil
+            {
+                hasLog = false
+            }else{
+                hasLog = true
+            }
+        }else
+        {
+            hasLog = false
+        }
+        return hasLog
+    }
+
+//    /**
+//    跳转到登录界面
+//    */
+//    func PresentToLogInView()
+//    {
+//        var log = LogInViewController(nibName:"LogInViewController",bundle:nil)
+//        log.view.frame = UIScreen.mainScreen().bounds
+//        var nav = UINavigationController(rootViewController: log)
+//        nav.navigationBar.tintColor = UIColor.whiteColor()
+//        self.presentViewController(nav, animated: true, completion: nil)
+//    }
+
+    
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

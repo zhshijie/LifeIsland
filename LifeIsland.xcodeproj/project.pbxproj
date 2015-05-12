@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09CD64F3DF39913E59F13CE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E335463D4AAFE7C5CAA8A /* libPods.a */; };
+		5F1C3FF71B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF41B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png */; };
+		5F1C3FF81B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF51B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png */; };
+		5F1C3FF91B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF61B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png */; };
 		5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1F78DF1AFC806700C9E7EE /* UserManager.swift */; };
 		5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B971AF9C14F008AA34E /* OtherViewController.swift */; };
 		5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B981AF9C14F008AA34E /* OtherViewController.xib */; };
@@ -49,6 +52,9 @@
 		5F5720C71B004673006C7521 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5720C51B004673006C7521 /* SignViewController.swift */; };
 		5F5720C81B004673006C7521 /* SignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720C61B004673006C7521 /* SignViewController.xib */; };
 		5F5720CA1B0073B8006C7521 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5720C91B0073B8006C7521 /* LogInViewController.xib */; };
+		5F62D6501B01044A0097D8DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F62D64F1B01044A0097D8DE /* BaseViewController.swift */; };
+		5F62D6531B01A1870097D8DE /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F62D6511B01A1870097D8DE /* GuideViewController.swift */; };
+		5F62D6541B01A1870097D8DE /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F62D6521B01A1870097D8DE /* GuideViewController.xib */; };
 		5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */; };
 		5FE008BE1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE008BC1AF1C4D3009076A7 /* LifeIsland.xcdatamodeld */; };
 		5FE008C51AF1C4D3009076A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE008C41AF1C4D3009076A7 /* Images.xcassets */; };
@@ -68,6 +74,9 @@
 
 /* Begin PBXFileReference section */
 		1D6E335463D4AAFE7C5CAA8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1C3FF41B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-02.png"; sourceTree = "<group>"; };
+		5F1C3FF51B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-03.png"; sourceTree = "<group>"; };
+		5F1C3FF61B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-04.png"; sourceTree = "<group>"; };
 		5F1F78DE1AFB9C0700C9E7EE /* until.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = until.h; sourceTree = "<group>"; };
 		5F1F78DF1AFC806700C9E7EE /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		5F260B971AF9C14F008AA34E /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +120,9 @@
 		5F5720C51B004673006C7521 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		5F5720C61B004673006C7521 /* SignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignViewController.xib; sourceTree = "<group>"; };
 		5F5720C91B0073B8006C7521 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		5F62D64F1B01044A0097D8DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5F62D6511B01A1870097D8DE /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		5F62D6521B01A1870097D8DE /* GuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
 		5FE008B51AF1C4D3009076A7 /* LifeIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE008B91AF1C4D3009076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FE008BA1AF1C4D3009076A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +207,9 @@
 		5F57208B1AFF99F9006C7521 /* 图标元素_1 */ = {
 			isa = PBXGroup;
 			children = (
+				5F1C3FF41B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png */,
+				5F1C3FF51B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png */,
+				5F1C3FF61B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png */,
 				5F57208C1AFF99F9006C7521 /* 图标cc-01.png */,
 				5F57208D1AFF99F9006C7521 /* 图标cc-02.png */,
 				5F57208E1AFF99F9006C7521 /* 图标cc-03.png */,
@@ -259,6 +274,9 @@
 		5FE008B71AF1C4D3009076A7 /* LifeIsland */ = {
 			isa = PBXGroup;
 			children = (
+				5F62D64F1B01044A0097D8DE /* BaseViewController.swift */,
+				5F62D6511B01A1870097D8DE /* GuideViewController.swift */,
+				5F62D6521B01A1870097D8DE /* GuideViewController.xib */,
 				5F5720C41B00462E006C7521 /* LogAndSign */,
 				5F260BA51AFAF3E9008AA34E /* Data */,
 				5F260B961AF9C112008AA34E /* Calendar */,
@@ -400,6 +418,7 @@
 				5F5720AD1AFF99F9006C7521 /* 图标cc-08.png in Resources */,
 				5F5720C81B004673006C7521 /* SignViewController.xib in Resources */,
 				5F5720B11AFF99F9006C7521 /* 图标cc-12.png in Resources */,
+				5F1C3FF71B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png in Resources */,
 				5F5720CA1B0073B8006C7521 /* LogInViewController.xib in Resources */,
 				5F5720AB1AFF99F9006C7521 /* 图标cc-06.png in Resources */,
 				5F5720BA1AFF99F9006C7521 /* 图标cc-31.png in Resources */,
@@ -409,6 +428,7 @@
 				5F5720AF1AFF99F9006C7521 /* 图标cc-10.png in Resources */,
 				5F5720AA1AFF99F9006C7521 /* 图标cc-05.png in Resources */,
 				5F5720A81AFF99F9006C7521 /* 图标cc-03.png in Resources */,
+				5F62D6541B01A1870097D8DE /* GuideViewController.xib in Resources */,
 				5F5720BC1AFF99F9006C7521 /* 图标cc-33.png in Resources */,
 				5F5720A91AFF99F9006C7521 /* 图标cc-04.png in Resources */,
 				5F5720B91AFF99F9006C7521 /* 图标cc-30.png in Resources */,
@@ -417,6 +437,8 @@
 				5F5720A61AFF99F9006C7521 /* 图标cc-01.png in Resources */,
 				5F5720B01AFF99F9006C7521 /* 图标cc-11.png in Resources */,
 				5F5720B81AFF99F9006C7521 /* 图标cc-19.png in Resources */,
+				5F1C3FF81B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png in Resources */,
+				5F1C3FF91B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png in Resources */,
 				5F5720B71AFF99F9006C7521 /* 图标cc-18.png in Resources */,
 				5F5720B41AFF99F9006C7521 /* 图标cc-15.png in Resources */,
 				5F5720AE1AFF99F9006C7521 /* 图标cc-09.png in Resources */,
@@ -473,8 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F62D6501B01044A0097D8DE /* BaseViewController.swift in Sources */,
 				5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */,
 				5F260BAB1AFB0783008AA34E /* OrderModel.swift in Sources */,
+				5F62D6531B01A1870097D8DE /* GuideViewController.swift in Sources */,
 				5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */,
 				5F260BA71AFAF3F3008AA34E /* DataManager.swift in Sources */,
 				5F260BA91AFB001E008AA34E /* User.swift in Sources */,

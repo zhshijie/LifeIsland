@@ -9,6 +9,10 @@
 import UIKit
 
 class User: NSObject,NSCoding{
+    
+    
+    //保存签到后获得的职务信息
+    var  jcatId:String?
     //基本信息
     var id:Int?
     var sex:Int?

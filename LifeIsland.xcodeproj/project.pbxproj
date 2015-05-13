@@ -11,6 +11,14 @@
 		5F1C3FF71B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF41B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png */; };
 		5F1C3FF81B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF51B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png */; };
 		5F1C3FF91B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FF61B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png */; };
+		5F1C3FFE1B02598A00E1EC13 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C3FFC1B02598A00E1EC13 /* MoreViewController.swift */; };
+		5F1C3FFF1B02598A00E1EC13 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C3FFD1B02598A00E1EC13 /* MoreViewController.xib */; };
+		5F1C40031B0259DC00E1EC13 /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C40011B0259DC00E1EC13 /* JobViewController.swift */; };
+		5F1C40041B0259DC00E1EC13 /* JobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C40021B0259DC00E1EC13 /* JobViewController.xib */; };
+		5F1C40081B025A1400E1EC13 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C40061B025A1400E1EC13 /* JobTableViewCell.swift */; };
+		5F1C40091B025A1400E1EC13 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C40071B025A1400E1EC13 /* JobTableViewCell.xib */; };
+		5F1C400C1B025A3D00E1EC13 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C400A1B025A3D00E1EC13 /* pick_bg@2x.png */; };
+		5F1C400D1B025A3D00E1EC13 /* TDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C400B1B025A3D00E1EC13 /* TDCViewController.swift */; };
 		5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1F78DF1AFC806700C9E7EE /* UserManager.swift */; };
 		5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F260B971AF9C14F008AA34E /* OtherViewController.swift */; };
 		5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F260B981AF9C14F008AA34E /* OtherViewController.xib */; };
@@ -77,6 +85,14 @@
 		5F1C3FF41B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-02.png"; sourceTree = "<group>"; };
 		5F1C3FF51B01A9AC00E1EC13 /* 1.0版本聊天工具-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-03.png"; sourceTree = "<group>"; };
 		5F1C3FF61B01A9AC00E1EC13 /* 1.0版本聊天工具-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.0版本聊天工具-04.png"; sourceTree = "<group>"; };
+		5F1C3FFC1B02598A00E1EC13 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		5F1C3FFD1B02598A00E1EC13 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		5F1C40011B0259DC00E1EC13 /* JobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		5F1C40021B0259DC00E1EC13 /* JobViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobViewController.xib; sourceTree = "<group>"; };
+		5F1C40061B025A1400E1EC13 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		5F1C40071B025A1400E1EC13 /* JobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		5F1C400A1B025A3D00E1EC13 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		5F1C400B1B025A3D00E1EC13 /* TDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDCViewController.swift; sourceTree = "<group>"; };
 		5F1F78DE1AFB9C0700C9E7EE /* until.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = until.h; sourceTree = "<group>"; };
 		5F1F78DF1AFC806700C9E7EE /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		5F260B971AF9C14F008AA34E /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +178,43 @@
 				D8CE0E30BB301C46D0B36C93 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F1C3FFA1B02590900E1EC13 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				5F1C40051B0259F400E1EC13 /* Collection */,
+				5F1C40001B0259AB00E1EC13 /* JobViewController */,
+				5F1C3FFB1B02595D00E1EC13 /* MoreViewController */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		5F1C3FFB1B02595D00E1EC13 /* MoreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F1C3FFC1B02598A00E1EC13 /* MoreViewController.swift */,
+				5F1C3FFD1B02598A00E1EC13 /* MoreViewController.xib */,
+			);
+			path = MoreViewController;
+			sourceTree = "<group>";
+		};
+		5F1C40001B0259AB00E1EC13 /* JobViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F1C40011B0259DC00E1EC13 /* JobViewController.swift */,
+				5F1C40021B0259DC00E1EC13 /* JobViewController.xib */,
+			);
+			path = JobViewController;
+			sourceTree = "<group>";
+		};
+		5F1C40051B0259F400E1EC13 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				5F1C40061B025A1400E1EC13 /* JobTableViewCell.swift */,
+				5F1C40071B025A1400E1EC13 /* JobTableViewCell.xib */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		5F260B941AF9C0C4008AA34E /* Chat */ = {
@@ -274,6 +327,9 @@
 		5FE008B71AF1C4D3009076A7 /* LifeIsland */ = {
 			isa = PBXGroup;
 			children = (
+				5F1C400A1B025A3D00E1EC13 /* pick_bg@2x.png */,
+				5F1C400B1B025A3D00E1EC13 /* TDCViewController.swift */,
+				5F1C3FFA1B02590900E1EC13 /* Job */,
 				5F62D64F1B01044A0097D8DE /* BaseViewController.swift */,
 				5F62D6511B01A1870097D8DE /* GuideViewController.swift */,
 				5F62D6521B01A1870097D8DE /* GuideViewController.xib */,
@@ -411,6 +467,7 @@
 				5F5720A71AFF99F9006C7521 /* 图标cc-02.png in Resources */,
 				5F260B9E1AF9C1E5008AA34E /* CalendarViewController.xib in Resources */,
 				5F260BA21AF9C1F0008AA34E /* ChatViewController.xib in Resources */,
+				5F1C40091B025A1400E1EC13 /* JobTableViewCell.xib in Resources */,
 				5F5720BD1AFF99F9006C7521 /* 图标cc-34.png in Resources */,
 				5F260B9A1AF9C14F008AA34E /* OtherViewController.xib in Resources */,
 				5FE008C81AF1C4D3009076A7 /* LaunchScreen.xib in Resources */,
@@ -421,6 +478,7 @@
 				5F1C3FF71B01A9AC00E1EC13 /* 1.0版本聊天工具-02.png in Resources */,
 				5F5720CA1B0073B8006C7521 /* LogInViewController.xib in Resources */,
 				5F5720AB1AFF99F9006C7521 /* 图标cc-06.png in Resources */,
+				5F1C40041B0259DC00E1EC13 /* JobViewController.xib in Resources */,
 				5F5720BA1AFF99F9006C7521 /* 图标cc-31.png in Resources */,
 				5F5720B31AFF99F9006C7521 /* 图标cc-14.png in Resources */,
 				5F5720BF1AFF99F9006C7521 /* 图标cc-36.png in Resources */,
@@ -434,6 +492,7 @@
 				5F5720B91AFF99F9006C7521 /* 图标cc-30.png in Resources */,
 				5F5720BB1AFF99F9006C7521 /* 图标cc-32.png in Resources */,
 				5F5720AC1AFF99F9006C7521 /* 图标cc-07.png in Resources */,
+				5F1C400C1B025A3D00E1EC13 /* pick_bg@2x.png in Resources */,
 				5F5720A61AFF99F9006C7521 /* 图标cc-01.png in Resources */,
 				5F5720B01AFF99F9006C7521 /* 图标cc-11.png in Resources */,
 				5F5720B81AFF99F9006C7521 /* 图标cc-19.png in Resources */,
@@ -443,6 +502,7 @@
 				5F5720B41AFF99F9006C7521 /* 图标cc-15.png in Resources */,
 				5F5720AE1AFF99F9006C7521 /* 图标cc-09.png in Resources */,
 				5F5720B61AFF99F9006C7521 /* 图标cc-17.png in Resources */,
+				5F1C3FFF1B02598A00E1EC13 /* MoreViewController.xib in Resources */,
 				5F5720BE1AFF99F9006C7521 /* 图标cc-35.png in Resources */,
 				5F5720B51AFF99F9006C7521 /* 图标cc-16.png in Resources */,
 			);
@@ -495,9 +555,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1C3FFE1B02598A00E1EC13 /* MoreViewController.swift in Sources */,
 				5F62D6501B01044A0097D8DE /* BaseViewController.swift in Sources */,
 				5F260B9D1AF9C1E5008AA34E /* CalendarViewController.swift in Sources */,
 				5F260BAB1AFB0783008AA34E /* OrderModel.swift in Sources */,
+				5F1C40081B025A1400E1EC13 /* JobTableViewCell.swift in Sources */,
 				5F62D6531B01A1870097D8DE /* GuideViewController.swift in Sources */,
 				5F260B991AF9C14F008AA34E /* OtherViewController.swift in Sources */,
 				5F260BA71AFAF3F3008AA34E /* DataManager.swift in Sources */,
@@ -506,8 +568,10 @@
 				5F260BA11AF9C1F0008AA34E /* ChatViewController.swift in Sources */,
 				5F5720C21AFFB82F006C7521 /* LogInViewController.swift in Sources */,
 				5F260BAD1AFB0DC0008AA34E /* GoodsModel.swift in Sources */,
+				5F1C40031B0259DC00E1EC13 /* JobViewController.swift in Sources */,
 				5F1F78E01AFC806700C9E7EE /* UserManager.swift in Sources */,
 				5FE008BB1AF1C4D3009076A7 /* AppDelegate.swift in Sources */,
+				5F1C400D1B025A3D00E1EC13 /* TDCViewController.swift in Sources */,
 				5F5720C71B004673006C7521 /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

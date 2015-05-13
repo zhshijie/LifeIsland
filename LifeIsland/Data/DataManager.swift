@@ -58,6 +58,8 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
         request.cacheStoragePolicy = ASICachePermanentlyCacheStoragePolicy
         request.downloadCache = cache
         
+        var orders = [OrderModel]()
+        
         request.setCompletionBlock { () -> Void in
             
             
@@ -76,14 +78,16 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
             var responseData = request.responseData()
             
             var error:NSErrorPointer?
-            let  AllOrderData: AnyObject? = NSJSONSerialization.JSONObjectWithData(responseData, options:.MutableLeaves, error:nil)
+            let  OrderData: AnyObject? = NSJSONSerialization.JSONObjectWithData(responseData, options:.MutableLeaves, error:nil)
             
-            
-            if AllOrderData == nil
+            var AllOrderData:AnyObject? = OrderData!.objectForKey("scaned_orders")
+            if AllOrderData == nil || AllOrderData!.count == 0
             {
                 print("该用户没有订单")
                 return
             }
+            
+            
             
             for   index  in 0...(AllOrderData!.count-1)
             {
@@ -124,11 +128,20 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
                     _order.items?.append(_goods)
                 }
                 
-                self.ordersArr!.append(_order)
+                orders.append(_order)
+            }
+            if offset == 0
+            {
+                self.ordersArr = orders
+            }
+            else {
+                self.ordersArr! += orders
             }
             
+            self.OrderDataCache()
             //发送一个更新用户帐单的通知
             NSNotificationCenter.defaultCenter().postNotificationName(UPDateUSERORDER, object:self.ordersArr)
+            self.OrderDataCache()
             
         }
         
@@ -149,9 +162,9 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
     :param: orderId  订单id
     :param: eventId  事件id   扫码事件id是 5
     
-    :returns: 返回一张订单数据
+    :returns: 如果获得数据,则返回true
     */
-    func getTheOrder(userName:String!,userId:String!,orderId:String!,eventId:String!)->OrderModel
+    func getTheOrder(userName:String!,userId:String!,orderId:String!,eventId:String!,orderCode:String!)->Bool
     {
         var url = NSURL(string: "http://shenghuodao.gotoip2.com/work/main.php");
         var request =  ASIFormDataRequest(URL:url)
@@ -159,11 +172,13 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
         request.setPostValue(userId, forKey: "user_id")
         request.setPostValue(orderId, forKey: "order_id")
         request.setPostValue(eventId, forKey: "event_id")
+        request.setPostValue(orderCode, forKey: "order_code")
         request.setPostValue("lgst", forKey: "sys")
         request.setPostValue("lgst_nor", forKey: "ctrl")
         request.setPostValue("order_lgst", forKey: "action")
         
         var _order = OrderModel()
+        var isSuccess = false
         request.setCompletionBlock { () -> Void in
             var responseData = request.responseData()
             
@@ -177,53 +192,63 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
                 return
             }
             
-            let orderData:AnyObject? = AllOrderData?.objectForKey("order");
-            if orderData != nil
-            {
-            _order.id = orderData!.objectForKey("order_id") as? String
-            _order.address = orderData!.objectForKey("address") as? String
-            _order.mobilePhone = orderData!.objectForKey("mobile_phone") as? String
-            _order.addTime = orderData!.objectForKey("add_time") as? String
-            _order.createTime = orderData!.objectForKey("create_time") as? String
-            _order.isLock = (orderData!.objectForKey("is_lock") as? NSString)?.boolValue
-            _order.isOnline = (orderData!.objectForKey("is_online") as? NSString)?.boolValue
-            _order.isPrint = (orderData!.objectForKey("is_print") as? NSString)?.boolValue
-            _order.isNew = (orderData!.objectForKey("is_new") as? NSString)?.boolValue
-            _order.isMove = (orderData!.objectForKey("is_move") as? NSString)?.boolValue
-            _order.number =  (orderData!.objectForKey("order_number") as? NSString)?.integerValue
-            _order.price =  (orderData!.objectForKey("price") as? NSString)?.floatValue
-            _order.subtotal =  (orderData!.objectForKey("subtotal") as? NSString)?.floatValue
-            _order.source = orderData!.objectForKey("source") as? String
-            _order.orderSN = orderData!.objectForKey("order_sn") as? String
-            _order.remarks = orderData!.objectForKey("remarks") as? String
-            _order.orederCode = orderData!.objectForKey("order_code") as? String
-            _order.items = Array<GoodsModel>()
+            var status  = AllOrderData?.objectForKey("status") as? String
             
-            let AllgoodsData:AnyObject? = orderData!.objectForKey("order_items")
-            if(AllgoodsData != nil){
-            for i in 0...(AllgoodsData!.count-1)
+            if status == "0"
             {
-                var _goods = GoodsModel()
-                let goodsData: AnyObject = AllgoodsData!.objectAtIndex(i)
-                _goods.addTime = goodsData.objectForKey("add_time") as? String
-                _goods.createTime = goodsData.objectForKey("create_time") as? String
-                _goods.dishName = goodsData.objectForKey("dish_name") as? String
-                _goods.hotelName = goodsData.objectForKey("hotel_name") as? String
-                _goods.id = goodsData.objectForKey("item_id") as? String
-                _goods.price = (goodsData.objectForKey("price") as? NSString)?.floatValue
-                _goods.quantity = (goodsData.objectForKey("quantity") as? NSString)?.integerValue
-                _goods.totalPrice = (goodsData.objectForKey("total_price") as? NSString)?.floatValue
-                _order.items?.append(_goods)
+                isSuccess = true
+                let orderData:AnyObject? = AllOrderData?.objectForKey("order");
+                if orderData != nil
+                {
+                    _order.id = orderData!.objectForKey("order_id") as? String
+                    _order.address = orderData!.objectForKey("address") as? String
+                    _order.mobilePhone = orderData!.objectForKey("mobile_phone") as? String
+                    _order.addTime = orderData!.objectForKey("add_time") as? String
+                    _order.createTime = orderData!.objectForKey("create_time") as? String
+                    _order.isLock = (orderData!.objectForKey("is_lock") as? NSString)?.boolValue
+                    _order.isOnline = (orderData!.objectForKey("is_online") as? NSString)?.boolValue
+                    _order.isPrint = (orderData!.objectForKey("is_print") as? NSString)?.boolValue
+                    _order.isNew = (orderData!.objectForKey("is_new") as? NSString)?.boolValue
+                    _order.isMove = (orderData!.objectForKey("is_move") as? NSString)?.boolValue
+                    _order.number =  (orderData!.objectForKey("order_number") as? NSString)?.integerValue
+                    _order.price =  (orderData!.objectForKey("price") as? NSString)?.floatValue
+                    _order.subtotal =  (orderData!.objectForKey("subtotal") as? NSString)?.floatValue
+                    _order.source = orderData!.objectForKey("source") as? String
+                    _order.orderSN = orderData!.objectForKey("order_sn") as? String
+                    _order.remarks = orderData!.objectForKey("remarks") as? String
+                    _order.orederCode = orderData!.objectForKey("order_code") as? String
+                    _order.items = Array<GoodsModel>()
+                    
+                    let AllgoodsData:AnyObject? = orderData!.objectForKey("order_items")
+                    if(AllgoodsData != nil){
+                        for i in 0...(AllgoodsData!.count-1)
+                        {
+                            var _goods = GoodsModel()
+                            let goodsData: AnyObject = AllgoodsData!.objectAtIndex(i)
+                            _goods.addTime = goodsData.objectForKey("add_time") as? String
+                            _goods.createTime = goodsData.objectForKey("create_time") as? String
+                            _goods.dishName = goodsData.objectForKey("dish_name") as? String
+                            _goods.hotelName = goodsData.objectForKey("hotel_name") as? String
+                            _goods.id = goodsData.objectForKey("item_id") as? String
+                            _goods.price = (goodsData.objectForKey("price") as? NSString)?.floatValue
+                            _goods.quantity = (goodsData.objectForKey("quantity") as? NSString)?.integerValue
+                            _goods.totalPrice = (goodsData.objectForKey("total_price") as? NSString)?.floatValue
+                            _order.items?.append(_goods)
+                        }
+                    }
                 }
-            }
-            }
+                
+                
+                self.ordersArr!.append(_order)
 
+            }
+            
         }
         
         request.delegate = self
         request.startSynchronous()
         
-        return _order
+        return isSuccess
     }
     
     
@@ -334,6 +359,8 @@ class DataManager: NSObject,ASIHTTPRequestDelegate{
                 let status:Int = (AllOrderData!.objectForKey("status") as? NSString)!.integerValue
                 if status == 0
                 {
+                    var user = UserManager.getInstance.user!
+                    user.jcatId = AllOrderData!.objectForKey("jcat_id") as? String
                     signSuccess = true
                 }
             }

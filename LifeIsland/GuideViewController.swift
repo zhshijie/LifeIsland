@@ -25,13 +25,15 @@ class GuideViewController: UIViewController {
 
     @IBAction func ToLogInView(sender: AnyObject) {
         var logInView = LogInViewController(nibName:"LogInViewController",bundle:nil)
+        
+        var logNV = UINavigationController(rootViewController: logInView)
         var appDele:UIApplicationDelegate = UIApplication.sharedApplication().delegate!
         
         
-        logInView.modalPresentationStyle = .FormSheet
-        logInView.modalTransitionStyle  = .FlipHorizontal
-        self.presentViewController(logInView, animated: true) { () -> Void in
-            appDele.window?!.rootViewController = logInView
+        logNV.modalPresentationStyle = .FormSheet
+        logNV.modalTransitionStyle  = .FlipHorizontal
+        self.presentViewController(logNV, animated: true) { () -> Void in
+            appDele.window?!.rootViewController = logNV
             
         }
         self.removeFromParentViewController()

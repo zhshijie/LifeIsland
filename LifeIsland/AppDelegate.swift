@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
         self.window!.makeKeyAndVisible()
         
-    NSUserDefaults.standardUserDefaults().removeObjectForKey("numToLogIn")
+//    NSUserDefaults.standardUserDefaults().removeObjectForKey("numToLogIn")
 //
 //        RootTaB = UITabBarController()
 //        var CalendarVC = CalendarViewController();

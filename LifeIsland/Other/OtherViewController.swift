@@ -18,12 +18,14 @@ class OtherViewController: UIViewController,UINavigationControllerDelegate{
         super.viewDidLoad()
         self.title = "其他";
         self.navigationController?.delegate = self
-      
+        self.hidesBottomBarWhenPushed = false
         
     }
     
   
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+        
+        self.tabBarController!.tabBar.hidden = true
         if viewController.hidesBottomBarWhenPushed
         {
             (self.tabBarController as! BaseViewController).hideTabBar()
@@ -34,15 +36,33 @@ class OtherViewController: UIViewController,UINavigationControllerDelegate{
     }
 
     
+    @IBAction func ScanningAction(sender: AnyObject) {
+        
+        var tDC = TDCViewController()
+        tDC.hidesBottomBarWhenPushed = true
+        self.navigationController!.pushViewController(tDC, animated: true)
+        
+    }
+    
+    @IBAction func JobAction(sender: AnyObject)
+    {
+        var job = JobViewController(nibName: "JobViewController", bundle: nil)
+        job.hidesBottomBarWhenPushed = true
+        self.navigationController!.pushViewController(job, animated: true)
+        
+    }
     override func viewWillAppear(animated: Bool) {
 //        var tab = self.tabBarController! as! BaseViewController
-        self.hidesBottomBarWhenPushed = false
     }
     
   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.hidesBottomBarWhenPushed = false
     }
     
     

@@ -127,6 +127,7 @@ class LogInViewController: UIViewController {
         self.view.window?.rootViewController!.presentViewController(RootTaB, animated: true)
         { () -> Void in
             appDele.window?!.rootViewController = RootTaB
+    
         }
         self.removeFromParentViewController()
         
